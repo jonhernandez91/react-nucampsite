@@ -19,19 +19,19 @@ function Directory(props) {
 
     const directory = props.campsites.map(campsite => {
         return (
-            <div key={campsite.id} className = 'col-md-5 m-1'>
+            <div key={campsite.id} className='col-md-5 m-1'>
                 <RenderDirectoryItem campsite={campsite} />
             </div>
         );
     });
 
     return(
-        <div className = 'container'>
+        <div className='container'>
             <div className='row'>
                 <div classNAme='col'>
                     <Breadcrumb>
                         <BreadcrumbItem>
-                            <Link to ='/home'>Home</Link>
+                            <Link to='/home'>Home</Link>
                         </BreadcrumbItem>
                         <BreadcrumbItem active>Directory</BreadcrumbItem>
                     </Breadcrumb>
@@ -39,7 +39,7 @@ function Directory(props) {
                     <hr />
                 </div>
             </div>
-            <div className = 'row'>
+            <div className='row'>
                 {directory}
             </div>
         </div>
